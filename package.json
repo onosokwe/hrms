@@ -6,7 +6,7 @@
     "node": "16.x",
     "npm": "9.x"
   },
-  "homepage": "https://kris.herokuapp.com/",
+  "homepage": "https://hrms.render.com/",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "@testing-library/jest-dom": "^5.11.4",
