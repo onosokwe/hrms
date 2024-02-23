@@ -19,15 +19,15 @@ export default function Employees() {
                             <div className="my_profile">
                                 <div className="table-responsive">
                                     <table className="table text-left text-caps table-bordered" id="myTable">
-                                        <thead><tr><th>No</th><th>Date</th><th>Description</th><th>Method</th><th>Total</th><th>Status</th><th>Action</th></tr></thead>
+                                        <thead><tr><th>No</th><th>Name</th><th>Email</th><th>Phone</th><th>Designation</th><th>Status</th><th>Action</th></tr></thead>
                                         <tbody>
                                             <tr><td>1</td>
-                                                <td>27/09/2023</td>
-                                                <td>Domain name renewal</td>
-                                                <td>Paypal</td>
-                                                <td>$5.90</td>
-                                                <td><span className="badge badge-success">paid</span></td>
-                                                <td>TECHGUY </td>
+                                                <td>James Colton</td>
+                                                <td>james@colton.com</td>
+                                                <td>234 809 112 23 344</td>
+                                                <td>Senior Manager</td>
+                                                <td><span className="badge badge-success">Active</span></td>
+                                                <td>Deactivate</td>
                                             </tr>
                                         </tbody>
                                     </table>

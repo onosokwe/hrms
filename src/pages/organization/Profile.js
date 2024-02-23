@@ -77,7 +77,7 @@ export default function CompanyProfile(props) {
                             <div className="my_profile">
                                 <div className="table-responsive">
                                     <table className="table text-left text-caps table-bordered" id="myTable">
-                                        <thead><tr><th>No</th><th>Date</th><th>Description</th><th>Method</th><th>Total</th><th>Status</th><th>Action</th></tr></thead>
+                                        <thead><tr><th>No</th><th>Date</th><th>Description</th><th>Method</th><th>Total Amount</th><th>Status</th><th>Action</th></tr></thead>
                                         <tbody>
                                             <tr><td>1</td>
                                                 <td>27/09/2023</td>
@@ -85,7 +85,7 @@ export default function CompanyProfile(props) {
                                                 <td>Paypal</td>
                                                 <td>$5.90</td>
                                                 <td><span className="badge badge-success">paid</span></td>
-                                                <td>TECHGUY </td>
+                                                <td>MARK SUCCESSFUL </td>
                                             </tr>
                                         </tbody>
                                     </table>
