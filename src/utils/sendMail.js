@@ -6,7 +6,7 @@ const sendEmail = async (options) => {
     // console.log(process.env)
 
     // if(process.env.SENDGRID_API_KEY && process.env.FROM_NAME && process.env.FROM_EMAIL && process.env.TEMPLATE_ID){
-        sgMail.setApiKey('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');
+        sgMail.setApiKey('');
 
         console.log(options)
         
@@ -17,10 +17,10 @@ const sendEmail = async (options) => {
                 const msg = {
                     to: options.email,
                     cc: `onosokwe@gmail.com`,
-                    from: `Kimberly <info@kimberly-ryan.net>`,
+                    from: `ONOSOKWE <hello@onosokwe.com>`,
                     subject: options.subject,
                     text: options.message,
-                    template_id: 'd-f1db076c312b45f38573d4fcb7e08c4e', //process.env.TEMPLATE_ID,
+                    template_id: '', //process.env.TEMPLATE_ID,
                     dynamic_template_data: options.dynamic_template_data,
                 };
                 await sgMail.send(msg);
