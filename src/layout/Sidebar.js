@@ -25,7 +25,6 @@ function Sidebar() {
                         <a href="/company-chart" className="dash-nav-dropdown-item">Organization Chat</a>
                     </div>
                 </div>
-                
 
                 <div className="hrcm-dash-info"><h5>PEOPLE</h5></div>
                 <div className="dash-nav-dropdown">
@@ -46,7 +45,6 @@ function Sidebar() {
                         <a href="/documents" className="dash-nav-dropdown-item">Documents</a>
                     </div>
                 </div>
-                
 
                 <div className="hrcm-dash-info"><h5>PRODUCTIVITY</h5></div>
                 <a href="/tasks" className="dash-nav-item"><i className="fa fa-tasks"></i> Tasks </a>
@@ -80,7 +78,6 @@ function Sidebar() {
 
             </nav>
         </div>
-
     );
 }
 
