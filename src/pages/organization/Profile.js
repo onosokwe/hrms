@@ -47,7 +47,7 @@ export default function CompanyProfile(props) {
                             <h4>{user ? `${user && user.first_name} ${user && user.last_name}` : 'NIACOM NIGERIA LIMITED INTERNATIONAL'}</h4>
                         </div>
                         <div className="detailbox">
-                            <p>Company ID <span>389933</span></p>
+                            <p>Company ID <span>999933</span></p>
                             <p>RC Number <span>RC6390</span></p>
                             <p>Company ID <span>389933</span></p>
                         </div>

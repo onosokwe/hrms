@@ -39,7 +39,7 @@ function Sidebar() {
                     <a type="button"  href='#' className="dash-nav-item dash-nav-dropdown-toggle">
                         <i className="fa fa-retweet"></i> Requests</a>
                     <div className="dash-nav-dropdown-menu">
-                        <a href="/leavve" className="dash-nav-dropdown-item">Leave</a>
+                        <a href="/leave" className="dash-nav-dropdown-item">Leave</a>
                         <a href="/exit" className="dash-nav-dropdown-item">Exit</a>
                         <a href="/loan" className="dash-nav-dropdown-item">Loan</a>
                         <a href="/documents" className="dash-nav-dropdown-item">Documents</a>

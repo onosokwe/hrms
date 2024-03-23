@@ -387,3 +387,52 @@ footer p {margin-bottom: 0; padding-bottom: 0; font-size: 12px;}
 .modal .modal-body .form-control::placeholder {color: #a0a0a0; font-size: 14px;}
 .modal .modal-body .help-block {font-size: 12px; color: #8898aa;}
 .modal .modal-body .btn-submit {background: #00d548; border-radius: 4px; border-color: #00d548; display: block; box-shadow: none; color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* home_quote */
+/* .quotes {padding: 0px 0; margin: 0;}
+.quotes h1 {font-size: 30px; margin: 0; text-align: center; color: #2e3192; font-variant: small-caps; padding: 0; margin-bottom: 0px;}
+.quotes p {font-size: 18px; text-align: center; color: #424b41; width: 70%; margin: 0 auto 40px;} */
+/*.quotes .form-horizontal {max-width: 700px; text-align: left;}*/
+/*.quotes .form-group {margin-bottom: 20px;}*/
+/*.quotes .control-label {float: left; font-weight: bold; font-size: 18px; color: #606a6f;}*/
+/*.quotes .control-label span {color: #ef1b25}*/
+/*.quotes .checkbox {color: #606a6f; font-weight: bold; font-size: 18px;}*/
+/*.quotes .form-control {border-radius: 5px; border: 2px solid #adadad; padding: 12px 15px;}*/
+/*.quotes .form-control:focus {box-shadow: none;border-color: #888;}*/
+/*.quotes .btn {background: #178be9; color: #fff; min-width: 120px; cursor: pointer;}*/
+/*.quotes .btn:focus, .quotes .btn:hover {background: #1354a9; }*/
+@media(max-width: 768px) {
+.quotes {padding-bottom: 30px;}
+.quotes h1 {font-size: 25px; line-height: normal;}
+.quotes p {width: 100%; margin-bottom: 20px; font-size: 16px; line-height: 22px;}}
+
+
+
+/* login */
+.login {padding: 0px 0 30px; background:#e4e9f2;}
+.account {background: #fff;box-shadow:0 0 5px rgba(29,51,75,0.5);max-width:400px;padding:20px;margin:20px auto 0;border-radius:4px;}
+.account h2{color:#212529;font-size:23px;font-weight:500;margin:0 auto;padding:0;text-align:center;}
+.account label{font-weight:600;color:#212529; font-size:15px;}
+.account label span {color: #fc1607;}
+.account form p {font-size: 12px; font-weight: 500;}
+.account .form-group {margin-top:0;}
+.account .form-control{font-size: 14px; border-color:#888; box-shadow: none;}
+.account .form-control:focus{border:2px solid #888594;color: #666;border-color: #00b5b8;}
+.account .form-control::placeholder{color:#aaa;}
+.account .btn{background: #178be9;margin-top:10px;cursor:pointer; width:100%;color:#fff;font-weight:400;}
+.account .btn:focus{outline:none;box-shadow: none;}
+.account .form_links {padding:20px 0 0;text-align:center;font-weight:500;}
+.account .form_links p{font-size:14px;margin-bottom:3px;color:#888594}
+.account .form_links p a{text-decoration:none;color:#2e3192;font-weight:bold;}
+.account .form_links span{height:1px;background:#888594;width:100%;margin:10px 0;display:block;}

@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
+import isLoggedIn from "./utils/isLoggedIn";
 import Layout from "./layout/Layout";
+
+import Login from "./pages/auth/Login";
 
 // organization
 import Landing from "./pages/dashboard/Landing";
@@ -20,6 +22,8 @@ import "react-multi-carousel/lib/styles.css";
 function App() {
   return (
     <Router>
+      {isLoggedIn() ? 
+      <>
       <Layout>
         <Route exact path={"/dashboard"} component={Landing}></Route>
         <Route exact path={"/company-profile"} component={CompanyProfile}></Route>
@@ -30,6 +34,11 @@ function App() {
         <Route exact path={"/employees"} component={Employees}></Route>
 
       </Layout>
+      </> : 
+      <>
+        <Route path={"/"} component={Login} />
+      </>
+        }
 
     </Router>
   );
