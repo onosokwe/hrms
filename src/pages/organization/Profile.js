@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import orglogo from '../../assets/img/orglogo.png'
-import { getCurrentUser } from "../../utils/actions";
-import isLoggedIn from "../../utils/isLoggedIn";
+import { getLoggedInUser } from "../../utils/actions";
 import Loader from "../../utils/Loader";
 import { alertError } from "../../utils/alerts";
 
@@ -9,24 +8,22 @@ import { alertError } from "../../utils/alerts";
 export default function CompanyProfile(props) {
     const [loading, setLoading] = useState(true);
     const [user, setUser] = useState(null);
-    const TOKEN = localStorage.getItem("kracada:token");
+    const TOKEN = localStorage.getItem("kloka:token:data");
 
     useEffect(() => {
-        if (!isLoggedIn()) {
-            // props.history.push("/account/login");
-            // alertError("Please login to continue");
-        } else {
-            getCurrentUser(TOKEN)
-                .then((res) => {
-                    setUser(res.data.data);
-                    setLoading(false);
-                })
-                .catch((err) => {
-                    setLoading(false);
-                    alertError(err.response.data.error);
-                });
-        }
+         getLoggedInUser(TOKEN)
+            .then((res) => {
+                setUser(res.data.data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                setLoading(false);
+                alertError(err.response.data.error);
+            });
+        
       }, [TOKEN, props.history]);
+      
+    console.log(loading)
 
     return (
         <>
@@ -34,7 +31,7 @@ export default function CompanyProfile(props) {
             <h1 class="dash-title">Company Profile </h1>
 
             <div className="row dash-row">
-            {!loading ? (
+            {loading ? (
                 <Loader />
             ) : (
                 <>

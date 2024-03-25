@@ -1,6 +1,10 @@
 import axios from "axios";
 import instance from "../api";
 
+const baseURL = "https://kloka-api-b0c0cc5775ef.herokuapp.com/api";
+// const baseURL = "http://localhost:9000/api";
+
+
 // career
 const getAllCareers = async () => {
   const response = await instance.get("/careers/all");
@@ -166,12 +170,19 @@ const resetPassword = async (data) => {
 
 const getCurrentUser = async (token) => {
   const response = await axios.get(
-    `https://kracada-v2-api.herokuapp.com/api/user`,
+    `https://kloka-api-b0c0cc5775ef.herokuapp.com/api/user`,
     {
       headers: {
         Authorization: `Bearer ${token}`,
       },
     }
+  );
+  return response;
+};
+const getLoggedInUser = async (token) => {
+  const response = await axios.get(
+    `${baseURL}/user/mine`,
+    { headers: { Authorization: `Bearer ${token}`, }, }
   );
   return response;
 };
@@ -257,6 +268,7 @@ export {
   getForgotPasswordCode,
   resetPassword,
   getCurrentUser,
+  getLoggedInUser,
   getUserAppliedJobs,
   updatePersonal,
   updateExperience,

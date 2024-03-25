@@ -15,6 +15,12 @@ a {text-decoration: none !important; outline: none !important;}
 /* dash */
 .dash {position: relative;}
 .dash-app {display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-flex: 2; -webkit-flex-grow: 2; -ms-flex-positive: 2; flex-grow: 2; margin-top: 84px;}
+
+.dash-app .topbtn {height: 23px !important; float: right; font-size: 12px; padding: 2px 12px; border-radius: 4px; box-shadow: none; transition: all 0.2s;}
+
+
+
+
 .dash-row {margin-bottom: 20px; margin-top: 20px;}
 @media (min-width: 992px) {
 .dash-app {margin-left: 268px;}
@@ -273,6 +279,19 @@ input[type="file"].form-control {padding: 3px 15px 3px 10px; height: 30px;}
 .card-body .table thead {background: #444; color: #fff;}
 .card-body .table th {font-size: 13px; font-weight: 500; padding: 3px 6px; line-height: 19px;}
 .card-body .table td {font-size: 12px; font-weight: 400; border-bottom: 1px solid #888;}
+
+
+.card-body .table td .btn {padding: 3px 10px; font-size: 11px; min-width:30px; margin: 0; border:none; background-color:#4B9CD3 !important; text-align:center; box-shadow:none; font-weight:500;}
+.card-body .table td .btn-edit {background-color:#4169e1 !important; color:#fff; }
+.card-body .table td .btn-surview {background-color:#f93 !important; color:#fff;}
+.card-body .table td .btn-review {background-color:#00ffff !important; color:#444;}
+.card-body .table td .btn-preview {background-color:#00b3b3 !important; color:#fff;}
+.card-body .table td .btn-view {background-color:#006400 !important; color:#fff;}
+.card-body .table td .btn-delete {background-color:#B22222 !important; color:#fff; }
+.card-body .table td .btn-edit:hover {background-color:#00308f !important; color:#fff;}
+.card-body .table td .btn-delete:hover {background-color:#8B0000 !important; color:#fff;}
+
+
 .card-body .table td .pagination {margin: 4px auto;}
 .card-body .table td .pagination li {font-size: 14px; padding: 4px; border-right: 1px solid #ccc !important; background: #444; color: #fff;}
 .card-body .table td .pagination li:first-child {border-top-left-radius: 4px; border-bottom-left-radius: 4px;}
@@ -327,7 +346,7 @@ input[type="file"].form-control {padding: 3px 15px 3px 10px; height: 30px;}
 .spur-card .card-body .btn-primary {margin-bottom: 5px;}}
 
 /* dashbox */
-.dashbox {border-bottom: 1px solid #e2e6e9; background: #fff; padding: 0; margin: 5px 0 10px 0; display: block; box-shadow: 4px 8px 6px -6px #222;
+.dashbox {border-bottom: 1px solid #e2e6e9; background: #fff; padding: 0; margin: 5px 0 20px 0; display: block; box-shadow: 4px 8px 6px -6px #222;
    padding: 15px 20px; color: #456; text-decoration: none; border-radius: 9px;}
 a.dashbox:hover, a.dashbox:focus {outline: none; color: #456; text-decoration: none;}
 .dashbox h4 {font-size: 16px;}
@@ -399,26 +418,6 @@ footer p {margin-bottom: 0; padding-bottom: 0; font-size: 12px;}
 
 
 
-/* home_quote */
-/* .quotes {padding: 0px 0; margin: 0;}
-.quotes h1 {font-size: 30px; margin: 0; text-align: center; color: #2e3192; font-variant: small-caps; padding: 0; margin-bottom: 0px;}
-.quotes p {font-size: 18px; text-align: center; color: #424b41; width: 70%; margin: 0 auto 40px;} */
-/*.quotes .form-horizontal {max-width: 700px; text-align: left;}*/
-/*.quotes .form-group {margin-bottom: 20px;}*/
-/*.quotes .control-label {float: left; font-weight: bold; font-size: 18px; color: #606a6f;}*/
-/*.quotes .control-label span {color: #ef1b25}*/
-/*.quotes .checkbox {color: #606a6f; font-weight: bold; font-size: 18px;}*/
-/*.quotes .form-control {border-radius: 5px; border: 2px solid #adadad; padding: 12px 15px;}*/
-/*.quotes .form-control:focus {box-shadow: none;border-color: #888;}*/
-/*.quotes .btn {background: #178be9; color: #fff; min-width: 120px; cursor: pointer;}*/
-/*.quotes .btn:focus, .quotes .btn:hover {background: #1354a9; }*/
-@media(max-width: 768px) {
-.quotes {padding-bottom: 30px;}
-.quotes h1 {font-size: 25px; line-height: normal;}
-.quotes p {width: 100%; margin-bottom: 20px; font-size: 16px; line-height: 22px;}}
-
-
-
 /* login */
 .login {padding: 0px 0 30px; background:#e4e9f2;}
 .account {background: #fff;box-shadow:0 0 5px rgba(29,51,75,0.5);max-width:400px;padding:20px;margin:20px auto 0;border-radius:4px;}
@@ -427,12 +426,12 @@ footer p {margin-bottom: 0; padding-bottom: 0; font-size: 12px;}
 .account label span {color: #fc1607;}
 .account form p {font-size: 12px; font-weight: 500;}
 .account .form-group {margin-top:0;}
-.account .form-control{font-size: 14px; border-color:#888; box-shadow: none;}
+.account .form-control{font-size: 14px; border-color:#888; box-shadow: none; border-radius: 3px;}
 .account .form-control:focus{border:2px solid #888594;color: #666;border-color: #00b5b8;}
 .account .form-control::placeholder{color:#aaa;}
 .account .btn{background: #178be9;margin-top:10px;cursor:pointer; width:100%;color:#fff;font-weight:400;}
 .account .btn:focus{outline:none;box-shadow: none;}
 .account .form_links {padding:20px 0 0;text-align:center;font-weight:500;}
-.account .form_links p{font-size:14px;margin-bottom:3px;color:#888594}
-.account .form_links p a{text-decoration:none;color:#2e3192;font-weight:bold;}
-.account .form_links span{height:1px;background:#888594;width:100%;margin:10px 0;display:block;}
+.account .form_links p {font-size:14px; margin-bottom:8px; margin-top: 10px; color:#888594}
+.account .form_links p a {text-decoration:none; color:#2e3192; font-weight:bold;}
+.account .form_links span {height:1px; background:#888594; width:100%; margin:10px 0; display:block; }
